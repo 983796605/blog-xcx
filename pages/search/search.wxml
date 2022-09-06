@@ -1,0 +1,18 @@
+<!-- 加载动画 -->
+<Loading id="Loading" />
+<view class="input-box">
+    <image class="search-icon" catchtap="searchSubmit" mode="widthFix" src="../../images/search.png"></image>
+    <view class="input-item">
+        <input class="input" type="text" value="{{ optionContent }}" bindinput="changeSearchText" bindconfirm="searchSubmit" placeholder='请输入关键字' />
+    </view>
+    <image catchtap="clearData" class="delete-icon" mode="widthFix" src="../../images/delete.png"></image>
+</view>
+
+<view class="article-box" wx:if="{{ searchList.length }}">
+    <block wx:for="{{ searchList }}">
+        <dynamicList item="{{ item }}" />
+    </block>
+</view>
+<view class="not-data" wx:else>
+    {{ searchShow ? '暂无搜索内容~' : '搜索下看看~' }}
+</view>

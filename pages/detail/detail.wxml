@@ -1,0 +1,17 @@
+
+
+<customNav pageName="{{ pageName }}" />
+<!-- 加载动画 -->
+<Loading id="Loading" />
+<view class="header">
+    <view class="title">{{ detailData.title }}</view>
+    <view class="flex-center-c mt-30">
+        <view class="time">{{ detailData.updata_time }}</view>
+        <view class="browse-num">浏览：{{ detailData.browse_num }}</view>
+    </view>
+    <view class="intro">{{ detailData.introduce }}</view>
+</view>
+<view class="main-content entry-content">
+    <!-- <template is="wxParse" data="{{wxParseData:article.nodes}}"/> -->
+    <rich-text nodes="{{ detailData.content }}"></rich-text>
+  </view>

@@ -1,0 +1,8 @@
+<view class="list" bindtap="toDetail" data-id="{{ item.id }}">
+    <image class="cover" mode="aspectFill" src="{{ item.cover }}"></image>
+    <view class="info">
+        <view class="title text-ellipsis">{{ item.title }}</view>
+        <view class="intro text-ellipsis-2">{{ item.introduce }}</view>
+        <view class="time">{{ item.add_time }}</view>
+    </view>
+</view>

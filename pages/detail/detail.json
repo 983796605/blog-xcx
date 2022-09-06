@@ -1,0 +1,7 @@
+{
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "Loading": "../../components/loading/loading",
+        "customNav": "/components/customNav/customNav"
+    }
+}

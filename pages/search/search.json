@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "搜索页",
+    "usingComponents": {
+        "Loading": "../../components/loading/loading",
+        "dynamicList": "/components/dynamicList/dynamicList"
+    }
+}

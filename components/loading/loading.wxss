@@ -1,0 +1,90 @@
+/*请求加载样式 开始*/
+.accloading{z-index: 999;position: fixed;top: 0;left: 0;width: 100%;height: 100%;box-sizing: border-box;}
+.accloading .bg{position: absolute;top: 50%;left: 50%;width: 180rpx;height: 180rpx;background-color: rgba(0,0,0,.3);transform: translate(-50%,-50%);border-radius: 20rpx;box-sizing: border-box;}
+.accloading .box{position: absolute;top: 50%;left: 50%;margin-top: -45rpx;margin-left: -45rpx;width: 90rpx;height: 90rpx;-webkit-animation: ani-box 1s infinite; animation: ani-box 1s infinite;}
+.i-loading{float: left;margin-right: 30rpx;margin-bottom: 30rpx;width: 30rpx;height: 30rpx;background-color: #ffffff;border-radius: 50%;}
+.i-loading:nth-child(2n+0) {margin-right: 0px;}
+#aniOne {-webkit-animation: aniOne 1s infinite;animation: aniOne 1s infinite;}
+#aniTwo {-webkit-animation: aniTwo 1s infinite;animation: aniTwo 1s infinite;}
+#aniThree {-webkit-animation: aniThree 1s infinite;animation: aniThree 1s infinite;}
+#aniFour {-webkit-animation: aniFour 1s infinite;animation: aniFour 1s infinite;}
+@-webkit-keyframes ani-box {
+    100% {
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes ani-box {
+    100% {
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes aniOne {
+    50% {
+        -ms-transform: translate(30rpx, 30rpx);
+        -webkit-transform: translate(30rpx, 30rpx);
+        transform: translate(30rpx, 30rpx);
+    }
+}
+
+@keyframes aniOne {
+    50% {
+        -ms-transform: translate(30rpx, 30rpx);
+        -webkit-transform: translate(30rpx, 30rpx);
+        transform: translate(30rpx, 30rpx);
+    }
+}
+
+@-webkit-keyframes aniTwo {
+    50% {
+        -ms-transform: translate(-30rpx, 30rpx);
+        -webkit-transform: translate(-30rpx, 30rpx);
+        transform: translate(-30rpx, 30rpx);
+    }
+}
+
+@keyframes aniTwo {
+    50% {
+        -ms-transform: translate(-30rpx, 30rpx);
+        -webkit-transform: translate(-30rpx, 30rpx);
+        transform: translate(-30rpx, 30rpx);
+    }
+}
+
+@-webkit-keyframes aniThree {
+    50% {
+        -ms-transform: translate(30rpx, -30rpx);
+        -webkit-transform: translate(30rpx, -30rpx);
+        transform: translate(30rpx, -30rpx);
+    }
+}
+
+@keyframes aniThree {
+    50% {
+        -ms-transform: translate(30rpx, -30rpx);
+        -webkit-transform: translate(30rpx, -30rpx);
+        transform: translate(30rpx, -30rpx);
+    }
+}
+
+@-webkit-keyframes aniFour {
+    50% {
+        -ms-transform: translate(-30rpx, -30rpx);
+        -webkit-transform: translate(-30rpx, -30rpx);
+        transform: translate(-30rpx, -30rpx);
+    }
+}
+
+@keyframes aniFour {
+    50% {
+        -ms-transform: translate(-30rpx, -30rpx);
+        -webkit-transform: translate(-30rpx, -30rpx);
+        transform: translate(-30rpx, -30rpx);
+    }
+}
+/*请求加载样式 结束*/

@@ -1,0 +1,55 @@
+page {
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+.header {
+    padding: 50rpx 30rpx;
+    text-align: center;
+}
+.header .title {
+    font-size: 38rpx;
+    font-weight: bold;
+    color: #737373;
+}
+.header .time {
+    margin-right: 20rpx;
+}
+.header .time, .header .browse-num {
+    color: #D2D2D2;
+    font-size: 26rpx;
+}
+.header .intro {
+    background: #f9f9f9;
+    padding: 30rpx;
+    margin-top: 20rpx;
+    color: #6f6f6f;
+    font-size: 26rpx;
+    line-height: 40rpx;
+    text-align: left;
+}
+.main-content {
+    padding: 0 30rpx;
+}
+.entry-content h2 {
+    font-size: 24px;
+    line-height: 32px;
+}
+.entry-content blockquote {
+    border-left: 4px solid #A0DAD0;
+    background-color: #ebeef5;
+    border-radius: 3px;
+    padding: 15px 20px;
+    margin: 15px 0;
+    color: #777;
+}
+.entry-content .ql-syntax {
+    width: 100%;
+    background-color: #f8f8f8;
+    border: 1px solid #F9F9F9;
+    line-height: 1.5rem;
+    overflow: auto;
+    padding: 12rpx 20rpx;
+    box-sizing: border-box;
+    border-radius: 6rpx;
+}

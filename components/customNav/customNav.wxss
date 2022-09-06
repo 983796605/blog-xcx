@@ -1,0 +1,65 @@
+/* components/customNav/customNav.wxss */
+.custom-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 99;
+}
+
+.custom-search {
+  background-color: #f4f4f5;
+  padding: 0 16rpx;
+  margin: 0 !important;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.custom-search .text {
+  font-size: 26rpx;
+  color: #c8cdd1;
+}
+
+.page-name {
+  font-size: 34rpx;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.search-icon {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 10rpx;
+}
+
+.line {
+  height: 36rpx;
+  width: 1rpx;
+  background-color: #ccc;
+}
+
+.menu {
+  border: 1rpx solid #eaeaea;
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.menu .back-icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.menu .home-icon {
+  width: 40rpx;
+  height: 40rpx;
+}

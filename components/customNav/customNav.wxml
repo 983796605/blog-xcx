@@ -1,0 +1,18 @@
+<view style="height: {{ navBarHeight }}px;"></view>
+<!-- 自定义导航正文 -->
+<view class="custom-header" style="{{ headerStyle }}">
+  <view class="menu" style="{{ menuStyle }}">
+    <view></view>
+    <block wx:if="{{ isBack }}">
+      <image src="../../images/icon_back.png" class="back-icon" bindtap="bindBack"></image>
+      <view class="line"></view>
+    </block>
+    <image src="../../images/nav_home.png" class="home-icon" bindtap="bindToHome"></image>
+    <view></view>
+  </view>
+  <!-- 中间内容 -->
+  <view class="page-name" wx:if="{{ pageName }}" style="{{ pageNameStyle }}">{{ pageName }}</view>
+  <view class="custom-search" wx:else style="{{ searchStyle }}" bindtap="toSearch">
+    <image class="search-icon" src="../../images/search.png"></image><text class="text">搜法律问题</text>
+  </view>
+</view>

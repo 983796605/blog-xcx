@@ -1,0 +1,10 @@
+<view class="accloading" wx:if="{{ Loading }}" catchtouchmove="{{ Loading }}">
+  <view class="bg">
+    <view class="box">
+      <view class="i-loading" id="aniOne"></view>
+      <view class="i-loading" id="aniTwo"></view>
+      <view class="i-loading" id="aniThree"></view>
+      <view class="i-loading" id="aniFour"></view>
+    </view>
+  </view>
+</view>

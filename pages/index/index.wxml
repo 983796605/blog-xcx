@@ -1,0 +1,33 @@
+<!-- 顶部导航栏 -->
+<homeHeader />
+<!-- 加载动画 -->
+<Loading id="Loading" />
+<!-- 热门文章 -->
+<view class="hot-box">
+    <swiper autoplay="{{ true }}" interval="{{ 3000 }}" duration="{{ 300 }}" circular class="swiper-box">
+        <swiper-item wx:for="{{ hotList }}" class="swiper-item">
+            <view class="list">
+                <image class="cover" mode="widthFix" src="{{ item.cover }}"></image>
+                <view class="mask-text" bindtap="toDetail" data-id="{{ item.id }}">
+                    <view class="text text-ellipsis">{{ item.title }}</view>
+                </view>
+            </view>
+        </swiper-item>
+    </swiper>
+</view>
+<!-- 文章列表 -->
+<view class="section-title" style="top: {{ navBarHeight }}px;">近期</view>
+<view class="article-box">
+    <view class="list" wx:for="{{ blogData.list }}" bindtap="toDetail" data-id="{{ item.id }}">
+        <image class="cover" mode="aspectFill" src="{{ item.cover }}"></image>
+        <view class="info">
+            <view class="title text-ellipsis">{{ item.title }}</view>
+            <view class="intro text-ellipsis-2">{{ item.introduce }}</view>
+            <view class="time-hot">
+                <view class="time">{{ item.add_time }}</view>
+                <view class="heat">热度：{{ item.heat }}</view>
+            </view>
+        </view>
+    </view>
+    <view class="not-list-data" wx:if="{{ blogData.notData }}">木有更多了~</view>
+</view>

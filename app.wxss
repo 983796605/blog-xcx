@@ -1,0 +1,23 @@
+@import "./static/css/common.wxss";
+
+page {
+    /* 主要字体色 */
+    --mainColor: #18191C;
+    --highlightColor: #21C17F;
+    --grayColor: #7E838C;
+    /* 背景 */
+    --mainBg: #43B97D;
+}
+
+page,
+view,
+text,
+swiper,
+swiper-item,
+image,
+navigator {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #000000;
+}

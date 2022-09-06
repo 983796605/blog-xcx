@@ -1,0 +1,36 @@
+@import "../../static/css/common.wxss";
+
+.list {
+    padding: 30rpx;
+    overflow: hidden;
+    border-bottom: 1px solid #efefef;
+}
+.list .cover {
+    width: 180rpx;
+    height: 180rpx;
+    float: left;
+    margin-right: 20rpx;
+    border-radius: 20rpx;
+}
+.list .info {
+    overflow: hidden;
+    height: 180rpx;
+    position: relative;
+}
+.list .title {
+    color: #18191C;
+    font-size: 30rpx;
+    line-height: 46rpx;
+}
+.list .intro {
+    font-size: 24rpx;
+    color: #7E838C;
+    line-height: 32rpx;
+    margin-top: 20rpx;
+}
+.list .time {
+    font-size: 24rpx;
+    color: #999;
+    position: absolute;
+    bottom: 0;
+}

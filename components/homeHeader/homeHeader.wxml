@@ -1,0 +1,9 @@
+<view class="home-header" style="{{ headerStyle }}">
+    <text class="title">{{ title }}</text>
+    <view class="search-box" style="{{ searchStyle }}">
+        <view class="search" bindtap="toSearch" style="{{ searchRadius }}">
+            <text class="text">{{ search_text }}</text>
+        </view>
+    </view>
+</view>
+<view style="height: {{ navBarHeight }}px;"></view>

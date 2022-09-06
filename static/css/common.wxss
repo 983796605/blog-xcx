@@ -1,0 +1,376 @@
+page {
+    line-height: 1;
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+button.init {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    text-align: left;
+    line-height: normal;
+}
+
+button::after {
+    border: none;
+}
+
+.image {
+    background: url(https://al3.acc5.com/685da59eab19ada707ce4a3fb358d2c0.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* iphone X 等机型安全高度 */
+.safety-bottom {
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+.clearflex::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    clear: both;
+    overflow: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.line-height-1 {
+    line-height: 1;
+}
+
+.bg-fff {
+    background-color: #fff;
+}
+
+.mt-15 {
+    margin-top: 15rpx;
+}
+
+.mt-20 {
+    margin-top: 20rpx;
+}
+
+.mt-25 {
+    margin-top: 25rpx;
+}
+
+.mt-30 {
+    margin-top: 30rpx;
+}
+
+.mt-40 {
+    margin-top: 40rpx;
+}
+
+.mb-15 {
+    margin-bottom: 15rpx;
+}
+
+.mb-20 {
+    margin-bottom: 20rpx;
+}
+
+.mb-30 {
+    margin-bottom: 30rpx;
+}
+
+.mb-40 {
+    margin-bottom: 40rpx;
+}
+
+.mr-20 {
+    margin-right: 20rpx;
+}
+
+.mr-25 {
+    margin-right: 25rpx;
+}
+
+.mr-30 {
+    margin-right: 30rpx;
+}
+
+.mr-40 {
+    margin-right: 40rpx;
+}
+
+.ml-10 {
+    margin-left: 10rpx;
+}
+
+.ml-20 {
+    margin-left: 20rpx;
+}
+
+.pb-20 {
+    padding-bottom: 20rpx;
+}
+
+.pb-30 {
+    padding-bottom: 30rpx;
+}
+
+.pb-40 {
+    padding-bottom: 40rpx;
+}
+
+.pr-30 {
+    padding-right: 30rpx;
+}
+
+.pl-30 {
+    padding-left: 30rpx;
+}
+
+/* flex */
+.flex-center {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+}
+
+.flex-center-c {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-center-between {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-center-around {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-column {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+}
+
+.flex-column-center {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-column-center-c {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column-between {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* end flex */
+.not-text {
+    line-height: 60rpx;
+    text-align: center;
+    font-size: 28rpx;
+    color: var(--grayColor);
+}
+/* 分割线 */
+.divider {
+    height: 20rpx;
+    background-color: rgb(248, 248, 248);
+}
+
+/* 文本缩进 */
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.text-ellipsis-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.text-ellipsis-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.text-ellipsis-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+
+.text-ellipsis-5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+}
+
+/* 提交问题按钮样式 */
+.add-btn {
+    width: 690rpx;
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+    background-color: var(--mainBg);
+    color: #fff;
+    font-size: 36rpx;
+    border-radius: 10rpx;
+    margin: 40rpx auto 0;
+}
+
+/* 首页提问按钮 */
+/* 提问按钮 */
+.float-ask {
+    background-color: var(--mainBg);
+    width: 100rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 32rpx;
+    color: #fff;
+    text-shadow: 0px 5rpx 10rpx var(--mainBg);
+    box-shadow: 0px 3rpx 15rpx 0px var(--mainBg);
+}
+
+/* 无数据提示样式 */
+.not-data {
+    height: 140rpx;
+    line-height: 140rpx;
+    text-align: center;
+    color: #ccc;
+    font-size: 34rpx;
+}
+
+.not-list-data {
+    padding: 30rpx 0;
+    text-align: center;
+    color: #ccc;
+    font-size: 28rpx;
+}
+/* 底部发帖按钮 */
+.bottom-send-button {
+    background: linear-gradient(-30deg, #15C994, #21C17F);
+    width: 690rpx;
+    margin-left: -345rpx;
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+    border-radius: 44rpx;
+    position: fixed;
+    left: 50%;
+    font-size: 32rpx;
+    color: #fff;
+    font-weight: bold;
+    bottom: constant(safe-area-inset-bottom);
+    bottom: env(safe-area-inset-bottom);
+    margin-bottom: 30rpx;
+}
+.transition-03 {
+    transition: all .3s;
+    -moz-transition: all .3s;
+    /* Firefox 4 */
+    -webkit-transition: all .3s;
+    /* Safari 和 Chrome */
+    -o-transition: all .3s;
+}
+.transition-05 {
+    transition: all .5s;
+    -moz-transition: all .5s;
+    /* Firefox 4 */
+    -webkit-transition: all .5s;
+    /* Safari 和 Chrome */
+    -o-transition: all .5s;
+}
+/* 刷新成功动画 */
+.push-tip {
+    background: linear-gradient(#ffe6d3, #fff);
+    color: #ff6845;
+    text-align: center;
+    height: 0px;
+    line-height: 60rpx;
+    font-size: 24rpx;
+    /* position: absolute; */
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 999;
+    transition: all 1s;
+}
+
+.push-show {
+    height: 60rpx;
+    /* animation: slowshow 2s;
+    animation-fill-mode: both; */
+}
+
+@keyframes slowshow {
+    0% {
+        height: 0px;
+    }
+
+    50% {
+        height: 60rpx;
+    }
+
+    100% {
+        height: 0px;
+    }
+}
+
+/* end 刷新成功动画 */
+.mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 98;
+}
+
+/* 动态/评论：审核中样式 */
+.audit-icon {
+    display: inline-block;
+    background-color: #F2F3F5;
+    color: #8B8F9C;
+    font-size: 18rpx;
+    width: 80rpx;
+    text-align: center;
+    line-height: 34rpx;
+    border-radius: 12rpx;
+    vertical-align: middle;
+}
